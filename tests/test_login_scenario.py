@@ -14,7 +14,7 @@ class TestPositiveScenarios:
     def test_positive_login(self,driver):
         login_page=LoginPage(driver)
         login_page.open()
-        login_page.execute_login("student")
+        login_page.execute_login("student","Password123")
         # time.sleep(3)
         #
         # # Go to webpage
