@@ -6,7 +6,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 class TestExceptions:
 
-    @pytest.mark.exceptions
+    @pytest.mark.ex
     def test_no_such_element_exception(self, driver):
         driver.get("https://practicetestautomation.com/practice-test-exceptions/")
 

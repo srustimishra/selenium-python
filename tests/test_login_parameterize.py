@@ -1,10 +1,6 @@
 import time
-
 import pytest
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
 
 
 @pytest.mark.datadriven
@@ -13,6 +9,10 @@ from webdriver_manager.chrome import ChromeDriverManager
                           ("Incorrectuser2", "IncorrectPassword", "Your username is invalid!")])
 class TestNegativeScenarios:
     def test_negative_username(self, driver,username,password,expected_error_message):
+        # login_page=LoginPage(driver)
+        # login_page.open()
+        # login_page.execute_login()
+        # assert login_page.get_error_message() == expected_error_message,"Error Message is not expected"
         # Open page
         driver.get("https://practicetestautomation.com/practice-test-login/")
 
